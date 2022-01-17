@@ -56,7 +56,8 @@ class McM:
         else:
             home = os.getenv('HOME')
             if dev:
-                self.cookie = '%s/private/mcm-dev-cookie.txt' % (home)
+                #self.cookie = '%s/private/mcm-dev-cookie.txt' % (home)
+                self.cookie = '%s/private/ssocookie.txt' % (home)
             elif int:
                 self.cookie = '%s/private/mcm-int-cookie.txt' % (home)
             else:
