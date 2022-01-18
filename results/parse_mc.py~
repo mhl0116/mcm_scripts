@@ -1,0 +1,11 @@
+| HIG-RunIISummer20UL16DIGIPremix-02245 | GluGluHToGG_M-120_TuneCP5_13TeV-powheg-pythia8 | 85015 | submitted 
+| HIG-RunIISummer20UL16HLT-02250 | GluGluHToGG_M-120_TuneCP5_13TeV-powheg-pythia8 | 85015 | submitted |
+| HIG-RunIISummer20UL16MiniAODv2-02241 | GluGluHToGG_M-120_TuneCP5_13TeV-powheg-pythia8 | 85015 | submitted |
+| HIG-RunIISummer20UL16RECO-02250 | GluGluHToGG_M-120_TuneCP5_13TeV-powheg-pythia8 | 85015 | submitted |
+| HIG-RunIISummer20UL16SIM-02250 | GluGluHToGG_M-120_TuneCP5_13TeV-powheg-pythia8 | 85015 | submitted |
+| HIG-RunIISummer20UL16wmLHEGEN-01121 | GluGluHToGG_M-120_TuneCP5_13TeV-powheg-pythia8 | 85015 | submitted |
+
+loop over input list
+if no dataset in tmp list, save it
+if alread has a similar list, compare prepid based on priority
+if same save both, otherwise save the one that is more upstream
