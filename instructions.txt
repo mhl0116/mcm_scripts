@@ -1,0 +1,18 @@
+- Set up environment as in the below script, if not in screen already
+/home/users/hmei/myWorkspace/dis/start.sh
+
+- make SSO cookie 
+cern-get-sso-cookie --cert {usercert} --key {userkey} -r -o {cookiefile} -u {url} {extra}
+capath = "/etc/grid-security/certificates/",
+cacert = "/tmp/x509up_u31693",
+usercert = "/home/users/hmei/.globus/usercert.pem",
+userkey_passwordless = "/home/users/hmei/.globus/userkey_nopass.pem"
+cookie_file = "/home/users/hmei/private/ssocookie.txt", 
+mcm_public_url = "https://cms-pdmv.cern.ch/mcm/public/restapi"
+
+cern-get-sso-cookie --cert "/home/users/hmei/.globus/usercert.pem" --key "/home/users/hmei/.globus/userkey_nopass.pem" -r -o "/home/users/hmei/private/ssocookie.txt" -u "https://cms-pdmv.cern.ch/mcm/public/restapi" 
+
+or just run start.sh
+
+somehow start.sh way of generating sso-cookie doesn't work as of Jan 24 2022, a sloppy way would be go to dis and run python tests.py, then copy the ssocookie as mentioned above
+

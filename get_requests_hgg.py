@@ -26,10 +26,14 @@ f_samplelist = open(fname_samplelist, 'r')
 samplelist = f_samplelist.readlines()
 samplelist = [line[:-1] for line in samplelist]
 
-def get_Hgg_MC_status(year):
+def get_Hgg_MC_status(year, tag):
 
-    preid_tag = "*RunIISummer20UL{}*".format(year)
-    file1 = open("Hgg_UL{}_MC_status.txt".format(year), "w")  # write mode
+    #preid_tag = "*RunIISummer20UL{}*".format(year)
+    preid_tag = "*RunIISummer19UL{}*".format(year)
+
+    import subprocess
+    subprocess.call("mkdir -p results/{}".format(tag), shell=True)
+    file1 = open("results/{}/Hgg_UL{}_MC_status.txt".format(tag, year), "w")  # write mode
 
     for sample in samplelist:
 
@@ -62,5 +66,6 @@ def get_Hgg_MC_status(year):
 
     file1.close()
 
-get_Hgg_MC_status("17")
-get_Hgg_MC_status("18")
+get_Hgg_MC_status("16", "19UL")
+get_Hgg_MC_status("17", "19UL")
+get_Hgg_MC_status("18", "19UL")
