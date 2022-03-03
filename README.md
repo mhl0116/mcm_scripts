@@ -19,3 +19,6 @@ Repository for using McM scripts and example scripts
 * If you want to use priority changing scripts or do anything else related to cmsweb, you'll have to use voms-proxy:
     * `voms-proxy-init -voms cms`
     * `export X509_USER_PROXY=$(voms-proxy-info --path)`
+
+### My personal use case
+* Just use quicktest.sh 
