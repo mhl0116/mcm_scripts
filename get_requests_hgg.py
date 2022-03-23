@@ -28,8 +28,8 @@ samplelist = [line[:-1] for line in samplelist]
 
 def get_Hgg_MC_status(year, tag):
 
-    #preid_tag = "*RunIISummer20UL{}*".format(year)
-    preid_tag = "*RunIISummer19UL{}*".format(year)
+    preid_tag = "*RunIISummer20UL{}*".format(year)
+    #preid_tag = "*RunIISummer19UL{}*".format(year)
 
     import subprocess
     subprocess.call("mkdir -p results/{}".format(tag), shell=True)
@@ -66,6 +66,6 @@ def get_Hgg_MC_status(year, tag):
 
     file1.close()
 
-get_Hgg_MC_status("16", "19UL")
-get_Hgg_MC_status("17", "19UL")
-get_Hgg_MC_status("18", "19UL")
+get_Hgg_MC_status("16", "20UL")
+get_Hgg_MC_status("17", "20UL")
+get_Hgg_MC_status("18", "20UL")

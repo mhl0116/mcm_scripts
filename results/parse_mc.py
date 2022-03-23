@@ -84,7 +84,8 @@ def parse_mc(inputfname, yeartag, specialtag=""):
 #tag = "NMSSM_XYH_Y_tautau_H_gg_UL_MC_status"
 #tag = "NMSSM_XYH_Y_gg_H_tautau_UL_MC_status"
 
-tags = ["2G2Tau_UL_MC_status", "NMSSM_XYH_Y_gg_H_tautau_UL_MC_status", "NMSSM_XYH_Y_tautau_H_gg_UL_MC_status"]
+#tags = ["2G2Tau_UL_MC_status", "NMSSM_XYH_Y_gg_H_tautau_UL_MC_status", "NMSSM_XYH_Y_tautau_H_gg_UL_MC_status"]
+tags = ["20UL/Hgg_UL16_MC_status", "20UL/Hgg_UL17_MC_status", "20UL/Hgg_UL18_MC_status"]
 for tag in tags:
     for era in ["UL16", "UL17", "UL18"]:
         parse_mc(tag, era)
